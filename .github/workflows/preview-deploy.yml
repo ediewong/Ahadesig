@@ -1,0 +1,33 @@
+name: Deploy (Vercel)
+
+# 启用方式：在 GitHub 仓库 Settings → Secrets and variables → Actions
+# - Variables：ENABLE_VERCEL_ACTION = true
+# - Secrets：VERCEL_TOKEN、VERCEL_ORG_ID、VERCEL_PROJECT_ID
+# 若仅用 Vercel 控制台连接 GitHub 自动部署，勿设置 ENABLE_VERCEL_ACTION，本 workflow 将跳过。
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+
+concurrency:
+  group: vercel-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: ${{ vars.ENABLE_VERCEL_ACTION == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          prod: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
