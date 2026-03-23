@@ -13,6 +13,7 @@
 | `src/components/ui/` | 通用 UI |
 | `src/components/layout/` | 布局（Header / Footer） |
 | `src/features/` | 业务模块 |
-| `src/lib/` | `cn()`、`tokens.ts` 等 |
-| `src/app/globals.css` | Tailwind v4 `@theme` 与设计 Token |
+| `src/lib/` | `cn()` 等工具 |
+| `src/components/design-system/` | `theme.css`、设计 Token（`tokens.ts`） |
+| `src/app/globals.css` | 引入 Tailwind 与 `design-system/theme.css` |
 | `.claude/` | 规范与提示模板 |

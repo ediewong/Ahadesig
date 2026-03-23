@@ -1,0 +1,192 @@
+/*
+ * UntitledUI Semantic Design Tokens — CSS Custom Properties
+ * Generated from Figma Token Studio export
+ * 
+ * 当前: 仅亮色模式
+ * 暗色模式变量已预埋在文件底部（注释状态），需要时取消注释即可
+ */
+
+:root {
+  /* ═══════════════════ TEXT ═══════════════════ */
+  --color-text-primary:             #1c1917;
+  --color-text-secondary:           #44403c;
+  --color-text-tertiary:            #57534e;
+  --color-text-quaternary:          #79716b;
+  --color-text-white:               #ffffff;
+  --color-text-disabled:            #79716b;
+  --color-text-placeholder:         #79716b;
+  --color-text-placeholder-subtle:  #d7d3d0;
+
+  /* Text — Brand */
+  --color-text-brand-primary:       #7d2511;
+  --color-text-brand-secondary:     #c4330a;
+  --color-text-brand-tertiary:      #ec470a;
+
+  /* Text — Status */
+  --color-text-error-primary:       #d92d20;
+  --color-text-warning-primary:     #dc6803;
+  --color-text-success-primary:     #079455;
+
+  /* Text — Hover */
+  --color-text-secondary-hover:     #292524;
+  --color-text-tertiary-hover:      #44403c;
+  --color-text-brand-secondary-hover: #9b2911;
+  --color-text-error-primary-hover: #b42318;
+
+  /* Text — On Brand */
+  --color-text-primary-on-brand:    #ffffff;
+  --color-text-secondary-on-brand:  #ffd1a9;
+  --color-text-tertiary-on-brand:   #ffd1a9;
+  --color-text-quaternary-on-brand: #feb073;
+
+
+  /* ═══════════════════ BACKGROUND ═══════════════════ */
+  --color-bg-primary:               #ffffff;
+  --color-bg-secondary:             #fafaf9;
+  --color-bg-tertiary:              #f5f5f4;
+  --color-bg-quaternary:            #e7e5e4;
+  --color-bg-primary-hover:         #fafaf9;
+  --color-bg-secondary-hover:       #f5f5f4;
+  --color-bg-disabled:              #f5f5f4;
+  --color-bg-disabled-subtle:       #fafaf9;
+  --color-bg-overlay:               #1c1917;
+  --color-bg-active:                #e7e5e4;
+  --color-bg-primary-solid:         #1c1917;
+  --color-bg-secondary-solid:       #57534e;
+
+  /* Background — Brand */
+  --color-bg-brand-primary:         #fb6011;
+  --color-bg-brand-secondary:       #fff6ed;
+  --color-bg-brand-solid:           #fb6011;
+  --color-bg-brand-solid-hover:     #ec470a;
+  --color-bg-brand-section:         #7d2511;
+  --color-bg-brand-section-subtle:  #441006;
+
+  /* Background — Status */
+  --color-bg-error-primary:         #fef3f2;
+  --color-bg-error-secondary:       #fee4e2;
+  --color-bg-error-solid:           #d92d20;
+  --color-bg-warning-primary:       #fffaeb;
+  --color-bg-warning-secondary:     #fef0c7;
+  --color-bg-warning-solid:         #dc6803;
+  --color-bg-success-primary:       #ecfdf3;
+  --color-bg-success-secondary:     #dcfae6;
+  --color-bg-success-solid:         #079455;
+
+
+  /* ═══════════════════ BORDER ═══════════════════ */
+  --color-border-primary:           #d7d3d0;
+  --color-border-secondary:         #e7e5e4;
+  --color-border-tertiary:          #f5f5f4;
+  --color-border-disabled:          #d7d3d0;
+  --color-border-disabled-subtle:   #e7e5e4;
+  --color-border-brand:             #fb6011;
+  --color-border-brand-alt:         #ec470a;
+  --color-border-error:             #f04438;
+  --color-border-error-subtle:      #fda29b;
+
+
+  /* ═══════════════════ ALPHA ═══════════════════ */
+  --color-alpha-white-90: rgba(255, 255, 255, 0.90);
+  --color-alpha-white-80: rgba(255, 255, 255, 0.80);
+  --color-alpha-white-70: rgba(255, 255, 255, 0.70);
+  --color-alpha-white-60: rgba(255, 255, 255, 0.60);
+  --color-alpha-white-50: rgba(255, 255, 255, 0.50);
+  --color-alpha-white-40: rgba(255, 255, 255, 0.40);
+  --color-alpha-white-30: rgba(255, 255, 255, 0.30);
+  --color-alpha-white-20: rgba(255, 255, 255, 0.20);
+  --color-alpha-white-10: rgba(255, 255, 255, 0.10);
+  --color-alpha-black-10: rgba(0, 0, 0, 0.10);
+  --color-alpha-black-20: rgba(0, 0, 0, 0.20);
+  --color-alpha-black-30: rgba(0, 0, 0, 0.30);
+  --color-alpha-black-40: rgba(0, 0, 0, 0.40);
+  --color-alpha-black-50: rgba(0, 0, 0, 0.50);
+
+
+  /* ═══════════════════ FOCUS RING ═══════════════════ */
+  --focus-ring:       0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #fb6011;
+  --focus-ring-error: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #f04438;
+}
+
+
+/*
+ * ═══════════════════════════════════════════════════════════
+ * 暗色模式（预埋）
+ * 
+ * 启用方式:
+ * 1. 取消下面 .dark { ... } 块的注释
+ * 2. 在 tailwind.config.js 中确认 darkMode: 'class'
+ * 3. 在 <html> 标签上添加 class="dark" 即可切换
+ * ═══════════════════════════════════════════════════════════
+ *
+ * .dark {
+ *   --color-text-primary:             #f7f7f7;
+ *   --color-text-secondary:           #cecfd2;
+ *   --color-text-tertiary:            #94979c;
+ *   --color-text-quaternary:          #85888e;
+ *   --color-text-disabled:            #85888e;
+ *   --color-text-placeholder:         #85888e;
+ *   --color-text-placeholder-subtle:  #373a41;
+ *
+ *   --color-text-brand-primary:       #fff6ed;
+ *   --color-text-brand-secondary:     #feb073;
+ *   --color-text-brand-tertiary:      #ffd1a9;
+ *
+ *   --color-text-error-primary:       #f97066;
+ *   --color-text-warning-primary:     #fdb022;
+ *   --color-text-success-primary:     #47cd89;
+ *
+ *   --color-text-secondary-hover:     #ececed;
+ *   --color-text-tertiary-hover:      #cecfd2;
+ *   --color-text-brand-secondary-hover: #ffd1a9;
+ *   --color-text-error-primary-hover: #fda29b;
+ *
+ *   --color-text-primary-on-brand:    #ffffff;
+ *   --color-text-secondary-on-brand:  #ffd1a9;
+ *   --color-text-tertiary-on-brand:   #feb073;
+ *   --color-text-quaternary-on-brand: #fd843a;
+ *
+ *   --color-bg-primary:               #0c0e12;
+ *   --color-bg-secondary:             #13161b;
+ *   --color-bg-tertiary:              #22262f;
+ *   --color-bg-quaternary:            #373a41;
+ *   --color-bg-primary-hover:         #13161b;
+ *   --color-bg-secondary-hover:       #22262f;
+ *   --color-bg-disabled:              #22262f;
+ *   --color-bg-disabled-subtle:       #13161b;
+ *   --color-bg-overlay:               #13161b;
+ *   --color-bg-active:                #373a41;
+ *   --color-bg-primary-solid:         #f0f0f1;
+ *   --color-bg-secondary-solid:       #61656c;
+ *
+ *   --color-bg-brand-primary:         #fb6011;
+ *   --color-bg-brand-secondary:       #441006;
+ *   --color-bg-brand-solid:           #fb6011;
+ *   --color-bg-brand-solid-hover:     #fd843a;
+ *   --color-bg-brand-section:         #7d2511;
+ *   --color-bg-brand-section-subtle:  #441006;
+ *
+ *   --color-bg-error-primary:         #55160c;
+ *   --color-bg-error-secondary:       #7a271a;
+ *   --color-bg-error-solid:           #d92d20;
+ *   --color-bg-warning-primary:       #4e1d09;
+ *   --color-bg-warning-secondary:     #7a2e0e;
+ *   --color-bg-warning-solid:         #dc6803;
+ *   --color-bg-success-primary:       #053321;
+ *   --color-bg-success-secondary:     #074d31;
+ *   --color-bg-success-solid:         #079455;
+ *
+ *   --color-border-primary:           #373a41;
+ *   --color-border-secondary:         #22262f;
+ *   --color-border-tertiary:          #13161b;
+ *   --color-border-disabled:          #373a41;
+ *   --color-border-disabled-subtle:   #22262f;
+ *   --color-border-brand:             #fb6011;
+ *   --color-border-brand-alt:         #fd843a;
+ *   --color-border-error:             #f04438;
+ *   --color-border-error-subtle:      #912018;
+ *
+ *   --focus-ring:       0px 0px 0px 2px #0c0e12, 0px 0px 0px 4px #fb6011;
+ *   --focus-ring-error: 0px 0px 0px 2px #0c0e12, 0px 0px 0px 4px #f04438;
+ * }
+ */

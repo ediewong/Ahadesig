@@ -1,0 +1,161 @@
+/**
+ * UntitledUI Design System — Tailwind v4 @theme
+ * 品牌色：橙色系 (#fb6011)  字体：DM Sans
+ * 与 src/styles/tokens.css 中的语义变量配合使用。
+ * 修改 Token 时同步更新 tokens.ts（供 JS/图表等非 Tailwind 场景）。
+ */
+
+@theme inline {
+  /* ── 字体 ── */
+  --font-display: var(--font-dm-sans), "DM Sans", sans-serif;
+  --font-body:    var(--font-dm-sans), "DM Sans", sans-serif;
+  --font-sans:    var(--font-dm-sans), "DM Sans", sans-serif;
+
+  /* ── 字号 + 行高 ── */
+  --text-xs:            0.75rem;
+  --text-xs--line-height: 1.125rem;
+  --text-sm:            0.875rem;
+  --text-sm--line-height: 1.25rem;
+  --text-md:            1rem;
+  --text-md--line-height: 1.5rem;
+  --text-lg:            1.125rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl:            1.25rem;
+  --text-xl--line-height: 1.875rem;
+  --text-display-xs:    1.5rem;
+  --text-display-xs--line-height: 2rem;
+  --text-display-sm:    1.875rem;
+  --text-display-sm--line-height: 2.375rem;
+  --text-display-md:    2.25rem;
+  --text-display-md--line-height: 2.75rem;
+  --text-display-md--letter-spacing: -0.02em;
+  --text-display-lg:    3rem;
+  --text-display-lg--line-height: 3.75rem;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-xl:    3.75rem;
+  --text-display-xl--line-height: 4.5rem;
+  --text-display-xl--letter-spacing: -0.02em;
+  --text-display-2xl:   4.5rem;
+  --text-display-2xl--line-height: 5.625rem;
+  --text-display-2xl--letter-spacing: -0.02em;
+
+  /* ── 品牌色（橙色系）── */
+  --color-brand-25:  #fff9f2;
+  --color-brand-50:  #fff6ed;
+  --color-brand-100: #ffead5;
+  --color-brand-200: #ffd1a9;
+  --color-brand-300: #feb073;
+  --color-brand-400: #fd843a;
+  --color-brand-500: #fb6011;
+  --color-brand-600: #ec470a;
+  --color-brand-700: #c4330a;
+  --color-brand-800: #9b2911;
+  --color-brand-900: #7d2511;
+  --color-brand-950: #441006;
+
+  /* ── 灰色 ── */
+  --color-gray-25:  #fdfdfc;
+  --color-gray-50:  #fafaf9;
+  --color-gray-100: #f5f5f4;
+  --color-gray-200: #e7e5e4;
+  --color-gray-300: #d7d3d0;
+  --color-gray-400: #a9a29d;
+  --color-gray-500: #79716b;
+  --color-gray-600: #57534e;
+  --color-gray-700: #44403c;
+  --color-gray-800: #292524;
+  --color-gray-900: #1c1917;
+  --color-gray-950: #171412;
+
+  /* ── 错误色 ── */
+  --color-error-25:  #fffbfa;
+  --color-error-50:  #fef3f2;
+  --color-error-100: #fee4e2;
+  --color-error-200: #fecdca;
+  --color-error-300: #fda29b;
+  --color-error-400: #f97066;
+  --color-error-500: #f04438;
+  --color-error-600: #d92d20;
+  --color-error-700: #b42318;
+  --color-error-800: #912018;
+  --color-error-900: #7a271a;
+  --color-error-950: #55160c;
+
+  /* ── 警告色 ── */
+  --color-warning-25:  #fffcf5;
+  --color-warning-50:  #fffaeb;
+  --color-warning-100: #fef0c7;
+  --color-warning-200: #fedf89;
+  --color-warning-300: #fec84b;
+  --color-warning-400: #fdb022;
+  --color-warning-500: #f79009;
+  --color-warning-600: #dc6803;
+  --color-warning-700: #b54708;
+  --color-warning-800: #93370d;
+  --color-warning-900: #7a2e0e;
+  --color-warning-950: #4e1d09;
+
+  /* ── 成功色 ── */
+  --color-success-25:  #f6fef9;
+  --color-success-50:  #ecfdf3;
+  --color-success-100: #dcfae6;
+  --color-success-200: #abefc6;
+  --color-success-300: #75e0a7;
+  --color-success-400: #47cd89;
+  --color-success-500: #17b26a;
+  --color-success-600: #079455;
+  --color-success-700: #067647;
+  --color-success-800: #085d3a;
+  --color-success-900: #074d31;
+  --color-success-950: #053321;
+
+  /* ── 圆角 ── */
+  --radius-none: 0px;
+  --radius-xxs:  2px;
+  --radius-xs:   4px;
+  --radius-sm:   6px;
+  --radius-md:   8px;
+  --radius-lg:   10px;
+  --radius-xl:   12px;
+  --radius-2xl:  16px;
+  --radius-3xl:  20px;
+  --radius-4xl:  24px;
+  --radius-full: 9999px;
+
+  /* ── 阴影 ── */
+  --shadow-xs:  0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  --shadow-sm:  0px 1px 3px 0px rgba(10, 13, 18, 0.10), 0px 1px 2px -1px rgba(10, 13, 18, 0.10);
+  --shadow-md:  0px 4px 6px -1px rgba(10, 13, 18, 0.10), 0px 2px 4px -2px rgba(10, 13, 18, 0.06);
+  --shadow-lg:  0px 12px 16px -4px rgba(10, 13, 18, 0.08), 0px 4px 6px -2px rgba(10, 13, 18, 0.03), 0px 2px 2px -1px rgba(10, 13, 18, 0.04);
+  --shadow-xl:  0px 20px 24px -4px rgba(10, 13, 18, 0.08), 0px 8px 8px -4px rgba(10, 13, 18, 0.03), 0px 3px 3px -1.5px rgba(10, 13, 18, 0.04);
+  --shadow-2xl: 0px 24px 48px -12px rgba(10, 13, 18, 0.18), 0px 4px 4px -2px rgba(10, 13, 18, 0.04);
+  --shadow-3xl: 0px 32px 64px -12px rgba(10, 13, 18, 0.14), 0px 5px 5px -2.5px rgba(10, 13, 18, 0.04);
+  --shadow-focus-ring:       0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #fb6011;
+  --shadow-focus-ring-error: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #f04438;
+
+  /* ── 语义化间距（命名 spacing，与数字 scale 并存）── */
+  --spacing-xxs:  2px;
+  --spacing-xs:   4px;
+  --spacing-sm:   6px;
+  --spacing-md:   8px;
+  --spacing-lg:   12px;
+  --spacing-xl:   16px;
+  --spacing-2xl:  20px;
+  --spacing-3xl:  24px;
+  --spacing-4xl:  32px;
+  --spacing-5xl:  40px;
+  --spacing-6xl:  48px;
+  --spacing-7xl:  64px;
+  --spacing-8xl:  80px;
+  --spacing-9xl:  96px;
+  --spacing-10xl: 128px;
+  --spacing-11xl: 160px;
+}
+
+@layer base {
+  body {
+    @apply font-body antialiased;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+  }
+}

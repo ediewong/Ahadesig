@@ -23,9 +23,9 @@ npm run dev
 ## 目录与 Token
 
 - **路由**：`src/app/`（示例：`/`、`/about`）
-- **组件**：`src/components/ui/`、`src/components/layout/`
+- **组件**：`src/components/`（含 `design-system/`、`ui/`、`layout/`）
 - **业务模块**：`src/features/`
-- **设计 Token**：`src/app/globals.css`（`@theme`）；JS 侧镜像见 `src/lib/tokens.ts`
+- **设计 Token**：`src/components/design-system/`（`theme.css` + `tokens.ts`，由 `src/app/globals.css` 引入样式）
 
 ## Claude / 协作者
 

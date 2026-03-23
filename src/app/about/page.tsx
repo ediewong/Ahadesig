@@ -27,8 +27,12 @@ export default function AboutPage() {
         <ul className="mt-6 list-disc space-y-2 pl-5 text-text-secondary">
           <li>
             <strong className="text-text-primary">设计 Token</strong>：见{" "}
-            <code className="font-mono text-sm">src/app/globals.css</code> 与{" "}
-            <code className="font-mono text-sm">src/lib/tokens.ts</code>
+            <code className="font-mono text-sm">
+              src/components/design-system/
+            </code>{" "}
+            （<code className="font-mono text-sm">theme.css</code>、
+            <code className="font-mono text-sm">tokens.ts</code>），入口样式在{" "}
+            <code className="font-mono text-sm">src/app/globals.css</code>
           </li>
           <li>
             <strong className="text-text-primary">组件</strong>：通用 UI 放{" "}
